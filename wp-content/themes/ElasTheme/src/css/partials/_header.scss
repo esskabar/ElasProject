@@ -1,0 +1,798 @@
+$mobile_width : 767px;
+$wpml_width :  400px;
+.header {
+  background: #FFF;
+  box-shadow: 0px 12px 5px -14px #111;
+  border-bottom: 1px solid #f3f3f3;
+  nav.navbar-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    margin-bottom: 0;
+    .container-fluid {
+      width: 100%;
+      @media(max-width:400px) {
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      .wrapper_top_section {
+        width: 210px;
+        display: inline-block;
+        padding: 0px 0 0 10px;
+
+        @media(max-width:400px) {
+          padding: 0;
+          width: 160px;
+        }
+        .left_section {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 100%;
+          .logo {
+            width: 81px;
+            float: left;
+            //width: 30%;
+            position: relative;
+            @media(max-width:400px) {
+              max-width: 61px;
+            }
+            img {
+              max-width: 81px;
+             // transition: .3s;
+             // &:hover{
+             //   transform: scale(0.97);
+             // }
+              @media(max-width:400px) {
+                max-width: 61px;
+              }
+            }
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              height: 17px;
+              background: #8994a3;
+              width: 1px;
+              top: 20%;
+              right: -10%;
+            }
+            @media(max-width:400px) {
+              &:after {
+                display: none;
+              }
+            }
+          }
+          .top_phone_number {
+            text-decoration: none;
+            float: left;
+            //width: 70%;
+            padding-left: 15px;
+            letter-spacing: -0.3px;
+            color: #8994a3;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 5px 0 0 0;
+            transition: .3s;
+            &:hover{
+              color:#26264c;
+            }
+            @media(max-width:400px) {
+              letter-spacing: -0.5px;
+              font-size: 12px;
+              padding-left: 7px;
+            }
+
+          }
+        }
+      }
+      .navbar-header {
+        display: inline-block;
+        float: right;
+        .wpml-mob{
+          @media(max-width:$mobile_width) {
+            display: inline-block;
+            .wpml-ls-statics-shortcode_actions {
+              border: none;
+              padding: 10px 0 0 5px;
+              //background: transparent;
+              max-width: 120px;
+            }
+
+            .wpml-ls-slot-shortcode_actions:hover {
+              border: none;
+              outline: none;
+              background: #FFF;
+
+            }
+            &:after {
+              content: '\e821';
+              font-family: 'fontello';
+              color: #26264c;
+              position: absolute;
+              bottom: 8px;
+              font-weight: 500;
+            }
+            @media(max-width:$mobile_width) {
+              margin: 0 auto;
+              min-width: 140px;
+
+              &:after {
+                display: none;
+              }
+            }
+            @media(max-width:400px) {
+              margin: 0 auto;
+              min-width: 120px;
+
+
+            }
+            .wpml-ls-item-toggle,
+            .dropdown-toggle {
+              font-family: 'Roboto';
+              color: #26264c;
+              font-weight: bold;
+              background-color: transparent;
+              text-decoration: none;
+              font-size: 12px;
+              margin: 1px 10px 0 10px;
+              @media(max-width:400px) {
+                margin: 1px 4px 0 4px;
+              }
+            }
+            li {
+              a {
+                color: $lang-text;
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: 12px;
+                text-decoration: none;
+                padding: 8px 15px;
+                border: none;
+
+                &:hover {
+                  background-color: transparent;
+                  color: #8994a3;
+
+                }
+                @media(max-width:$mobile_width) {
+                  font-size: 12px;
+                }
+              }
+
+            }
+            .wpml-ls-sub-menu {
+              li {
+                a {
+                  border: none;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+      .navbar-collapse.in {
+        overflow-y: unset;
+      }
+      #navbar {
+        float: right;
+        background: #FFF;
+        @media(max-width:$mobile_width) {
+          float: none;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 110%;
+          opacity: 1;
+          z-index: 3;
+        }
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          @media(max-width: $mobile_width) {
+            float: none;
+            flex-direction: column;
+          }
+          .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            li {
+
+              display: inline-block;
+              position: relative;
+              margin: 12px 0 0 0;
+              a {
+                text-decoration: none;
+                padding: 19px;
+                text-transform: uppercase;
+                //letter-spacing: -0.9px;
+                color: #8994a3;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 30px;
+                &:after {
+                  content: '';
+                  width: calc(90% - 20px);
+                  bottom: -9px;
+                  left: 50%;
+                  transform: translateX(-50%) scaleX(0);
+                  height: 2px;
+                  background: #26264c;
+                  position: absolute;
+                  transform-origin: center;
+                  transition: .5s;
+                  max-width: 100px;
+                }
+                @media(max-width:$mobile_width) {
+                  font-size: 22px !important;
+                }
+              }
+              a:hover {
+                color: #26264c;
+                &:after {
+                  transform: translateX(-50%) scaleX(1);
+                }
+              }
+              @media(max-width: $mobile_width) {
+                margin: 30px 0 0 0 !important;
+              }
+            }
+            .current-menu-item {
+              a {
+                color: #26264c;
+                &:after {
+                  transform: translateX(-50%) scaleX(1);
+                }
+              }
+            }
+            @media(max-width:$mobile_width) {
+              flex-direction: column;
+            }
+          }
+          .dropdown {
+            .wpml-ls-statics-shortcode_actions {
+              border: none;
+              padding: 10px 0 0 5px;
+              //background: transparent;
+              max-width: 120px;
+            }
+
+            .wpml-ls-slot-shortcode_actions:hover {
+              border: none;
+              outline: none;
+              background: #FFF;
+
+            }
+            &:after {
+              content: '\e821';
+              font-family: 'fontello';
+              color: #26264c;
+              position: absolute;
+              bottom: 8px;
+              font-weight: 500;
+            }
+            @media(max-width:$mobile_width) {
+              margin: 0 auto;
+              min-width: 140px;
+
+              &:after {
+                display: none;
+              }
+            }
+            .wpml-ls-item-toggle,
+            .dropdown-toggle {
+              font-family: 'Roboto';
+              color: #26264c;
+              font-weight: bold;
+              background-color: transparent;
+              text-decoration: none;
+              font-size: 12px;
+              margin: 3px 10px 0 10px;
+            }
+            li {
+              a {
+                color: $lang-text;
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: 12px;
+                text-decoration: none;
+                padding: 8px 15px;
+                border: none;
+
+                &:hover {
+                  background-color: transparent;
+                  color: #8994a3;
+
+                }
+                @media(max-width:$mobile_width) {
+                  font-size: 16px;
+                }
+              }
+
+            }
+            .wpml-ls-sub-menu {
+              li {
+                a {
+                  border: none;
+                }
+              }
+            }
+          }
+          .wpml-full{
+            @media (max-width: $mobile_width) {
+              display: none;
+            }
+
+          }
+        }
+      }
+      .navbar-toggle {
+        display: none;
+        background: transparent;
+        border: none;
+        padding: 0;
+        float: right;
+        top: 10px;
+        right: 20px;
+        position: relative;
+
+        @media (max-width: $mobile_width) {
+          display: block;
+        }
+        @media(max-width:400px) {
+          right: 10px;
+        }
+        .animate-burger {
+          display: inline-block;
+          position: relative;
+          width: 24px;
+          height: 16px;
+
+          span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #26264c;
+            left: 0;
+            transition: transform .5s, opacity .6s;
+          }
+
+          .top {
+            top: 0;
+          }
+          .middle {
+            top: 50%;
+            margin-top: -1px;
+          }
+          .bottom {
+            bottom: 0;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          .animate-burger {
+            .top {
+              transform: translateY(-3px);
+            }
+            .bottom {
+              transform: translateY(3px);
+            }
+          }
+        }
+        &[aria-expanded="true"] {
+          .animate-burger {
+            .top {
+              transform: translateY(7px) rotate(-45deg);
+            }
+            .middle {
+              transform: translateX(10px);
+              opacity: 0;
+            }
+            .bottom {
+              transform: translateY(-7px) rotate(45deg);
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.home, .error404 {
+  .header {
+    background: #ec5e1e;
+    border-bottom: 1px solid #f6ad77;
+    nav.navbar-default {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      margin-bottom: 0;
+      .container-fluid {
+        width: 100%;
+        @media(max-width:400px) {
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+        .wrapper_top_section {
+          width: 210px;
+          display: inline-block;
+          padding: 0px 0 0 10px;
+
+          @media(max-width:400px) {
+            padding: 0;
+            width: 160px;
+          }
+          .left_section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            max-width: 270px;
+            .logo {
+              float: left;
+             // width: 37%;
+              position: relative;
+              @media(max-width:400px) {
+                max-width: 61px;
+              }
+              img {
+                max-width: 81px;
+                @media(max-width:400px) {
+                  max-width: 61px;
+                }
+              }
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 17px;
+                background: #ffcd9c;
+                width: 1px;
+                top: 20%;
+                right: -10%;
+              }
+              @media(max-width:400px) {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+            .top_phone_number {
+              text-decoration: none;
+              float: left;
+             // width: 63%;
+              padding-left: 15px;
+              letter-spacing: -0.3px;
+              color: #ffcd9c;
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 30px;
+              margin: 5px 0 0 0;
+              transition: .3s;
+              &:hover{
+                color:#fff;
+              }
+              @media(max-width:400px) {
+                letter-spacing: -0.5px;
+                font-size: 12px;
+                padding-left: 7px;
+              }
+            }
+          }
+        }
+        .navbar-header {
+          display: inline-block;
+          float: right;
+          .wpml-mob{
+            @media(max-width:$mobile_width) {
+              display: inline-block;
+              .wpml-ls-statics-shortcode_actions {
+                border: none;
+                padding: 10px 0 0 5px;
+                //background: transparent;
+                max-width: 120px;
+                background: #ec5e1e;
+                @media(max-width:400px) {
+                  max-width: 120px;
+                }
+
+              }
+
+              .wpml-ls-slot-shortcode_actions:hover {
+                border: none;
+                outline: none;
+                background: #ec5e1e;
+                color: #ffcd9c;
+              }
+              &:after {
+                content: '\e821';
+                font-family: 'fontello';
+                color: #FFF;
+                position: absolute;
+                bottom: 8px;
+                font-weight: 500;
+              }
+              @media(max-width:$mobile_width) {
+                margin: 0 auto;
+                min-width: 140px;
+
+                &:after {
+                  display: none;
+                }
+              }
+              @media(max-width:400px) {
+                min-width: 125px;
+              }
+              .wpml-ls-item-toggle,
+              .dropdown-toggle {
+                font-family: 'Roboto';
+                color: #FFF;
+                font-weight: bold;
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 12px;
+                margin: 1px 10px 0 10px;
+                @media(max-width:400px) {
+                  margin: 1px 4px 0 4px;
+                }
+              }
+              li {
+                a {
+                  color: $lang-text;
+                  font-family: 'Roboto';
+                  font-weight: bold;
+                  font-size: 12px;
+                  text-decoration: none;
+                  padding: 8px 15px;
+                  border: none;
+
+
+                  &:hover {
+                    background-color: transparent;
+                    color: #8994a3;
+
+                  }
+                  @media(max-width:$mobile_width) {
+                    font-size: 12px;
+                  }
+                }
+
+              }
+              .wpml-ls-sub-menu {
+                li {
+                  a {
+                    border: none;
+                  }
+                }
+              }
+
+            }
+
+          }
+        }
+        .navbar-collapse.in {
+          overflow-y: unset;
+        }
+        #navbar {
+          float: right;
+          background: #ec5e1e;
+
+          @media(max-width: $mobile_width ) {
+            float: none;
+          }
+          .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            @media(max-width: $mobile_width) {
+              float: none;
+              flex-direction: column;
+            }
+            .menu {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+
+              li {
+
+                display: inline-block;
+                position: relative;
+                margin: 12px 0 0 0;
+                a {
+                  text-decoration: none;
+                  padding: 19px;
+                  text-transform: uppercase;
+                  //letter-spacing: -0.9px;
+                  color: #ffcd9c;
+                  font-family: Roboto;
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 30px;
+                  &:after {
+                    content: '';
+                    width: calc(90% - 20px);
+                    bottom: -9px;
+                    left: 50%;
+                    transform: translateX(-50%) scaleX(0);
+                    height: 2px;
+                    background: #FFF;
+                    position: absolute;
+                    transform-origin: center;
+                    transition: .5s;
+                    max-width: 100px;
+                  }
+
+                }
+                a:hover {
+                  color: #FFF;
+                  &:after {
+                    transform: translateX(-50%) scaleX(1);
+                  }
+                }
+              }
+              .current-menu-item {
+                a {
+                  color: #FFF;
+                  &:after {
+                    transform: translateX(-50%) scaleX(1);
+                  }
+                }
+              }
+              @media(max-width: $mobile_width) {
+                flex-direction: column;
+              }
+            }
+            .dropdown {
+              .wpml-ls-statics-shortcode_actions {
+                border: none;
+                padding: 10px 0 0 5px;
+                background: transparent;
+                max-width: 120px;
+              }
+
+              .wpml-ls-slot-shortcode_actions:hover {
+                border: none;
+                outline: none;
+                background: transparent;
+
+              }
+              .wpml-ls-sub-menu {
+                &:hover {
+                  background: #FFF;
+                }
+
+              }
+              &:after {
+                content: '\e821';
+                font-family: 'fontello';
+                color: #FFF;
+                position: absolute;
+                bottom: 8px;
+                font-weight: 500;
+              }
+              @media(max-width: $mobile_width) {
+                margin: 0 auto;
+                min-width: 140px;
+
+                &:after {
+                  display: none;
+                }
+              }
+              @media(max-width:400px) {
+                min-width: 120px;
+              }
+              .wpml-ls-item-toggle,
+              .dropdown-toggle {
+                font-family: 'Roboto';
+                color: #FFF;
+                font-weight: bold;
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 12px;
+                margin: 1px 10px 0 10px;
+              }
+              li {
+                a {
+                  color: $lang-text;
+                  font-family: 'Roboto';
+                  font-weight: bold;
+                  font-size: 12px;
+                  text-decoration: none;
+                  padding: 8px 15px;
+
+                  &:hover {
+                    background-color: transparent;
+                    color: #8994a3;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+        .navbar-toggle {
+          display: none;
+          background: transparent;
+          border: none;
+          padding: 0;
+          float: right;
+          top: 10px;
+          right: 20px;
+          position: relative;
+
+          @media (max-width: $mobile_width) {
+            display: block;
+          }
+          @media(max-width:400px) {
+            right: 10px;
+          }
+          .animate-burger {
+            display: inline-block;
+            position: relative;
+            width: 24px;
+            height: 16px;
+
+            span {
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: #FFF;
+              left: 0;
+              transition: transform .5s, opacity .6s;
+            }
+
+            .top {
+              top: 0;
+            }
+            .middle {
+              top: 50%;
+              margin-top: -1px;
+            }
+            .bottom {
+              bottom: 0;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+            .animate-burger {
+              .top {
+                transform: translateY(-3px);
+              }
+              .bottom {
+                transform: translateY(3px);
+              }
+            }
+          }
+          &[aria-expanded="true"] {
+            .animate-burger {
+              .top {
+                transform: translateY(7px) rotate(-45deg);
+              }
+              .middle {
+                transform: translateX(10px);
+                opacity: 0;
+              }
+              .bottom {
+                transform: translateY(-7px) rotate(45deg);
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

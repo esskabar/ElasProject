@@ -1,0 +1,40 @@
+.content {
+
+    text-align: center;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    vertical-align: middle;
+    width: 100%;
+    padding: 115px 10px 50px 10px;
+    @media (max-width: 910px) {
+      padding: 65px 10px 10px 10px;
+    }
+    .title {
+      color: #26264c;
+      font-family: "Product Sans";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 27px;
+
+    }
+    .title_description {
+      color: #8994a3;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      max-width: 625px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('../../src/fonts/Gotham Book/fonts/Gotham Book.eot');
+  src: local('☺'),
+  url('../../src/fonts/Gotham Book/fonts/Gotham Book.woff') format('woff'),
+  url('../../src/fonts/Gotham Book/fonts/Gotham Book.ttf') format('truetype'),
+  url('../../src/fonts/Gotham Book/fonts/Gotham Book.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Conv_SF-UI-Display-Medium';
+  src: url('../../src/fonts/SF-UI-Display-Medium/fonts/SF-UI-Display-Medium.eot');
+  src: local('☺'),
+  url('../../src/fonts/SF-UI-Display-Medium/fonts/SF-UI-Display-Medium.woff') format('woff'),
+  url('../../src/fonts/SF-UI-Display-Medium/fonts/SF-UI-Display-Medium.ttf') format('truetype'),
+  url('../../src/fonts/SF-UI-Display-Medium/fonts/SF-UI-Display-Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Conv_SF-UI-Display-Regular';
+  src: url('../../src/fonts/SF-UI-Display-Regular/fonts/SF-UI-Display-Regular.eot');
+  src: local('☺'),
+  url('../../src/fonts/SF-UI-Display-Regular/fonts/SF-UI-Display-Regular.woff') format('woff'),
+  url('../../src/fonts/SF-UI-Display-Regular/fonts/SF-UI-Display-Regular.ttf') format('truetype'),
+  url('../../src/fonts/SF-UI-Display-Regular/fonts/SF-UI-Display-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+
+
+@import url('https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i');
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../../src/fonts/fontello/font/fontello.eot?55197326');
+  src: url('../../src/fonts/fontello/font/fontello.eot?55197326#iefix') format('embedded-opentype'),
+  url('../../src/fonts/fontello/font/fontello.woff2?55197326') format('woff2'),
+  url('../../src/fonts/fontello/font/fontello.woff?55197326') format('woff'),
+  url('../../src/fonts/fontello/font/fontello.ttf?55197326') format('truetype'),
+  url('../../src/fonts/fontello/font/fontello.svg?55197326#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?55197326#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-star:before { content: '\e800'; } /* '' */
+.icon-star-empty:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
+.icon-phone:before { content: '\e804'; } /* '' */
+.icon-left-dir:before { content: '\e805'; } /* '' */
+.icon-right-dir:before { content: '\e806'; } /* '' */
+.icon-left-open:before { content: '\e807'; } /* '' */
+.icon-right-open:before { content: '\e808'; } /* '' */
+.icon-group-circled:before { content: '\e809'; } /* '' */
+.icon-group:before { content: '\e80a'; } /* '' */
+.icon-home:before { content: '\e80b'; } /* '' */
+.icon-location:before { content: '\e80c'; } /* '' */
+.icon-location-1:before { content: '\e80d'; } /* '' */
+.icon-ok:before { content: '\e80e'; } /* '' */
+.icon-calendar-weekly:before { content: '\e80f'; } /* '' */
+.icon-bath:before { content: '\e810'; } /* '' */
+.icon-home-button:before { content: '\e811'; } /* '' */
+.icon-house-with-chimney:before { content: '\e812'; } /* '' */
+.icon-king-size-bed:before { content: '\e813'; } /* '' */
+.icon-map-placeholder:before { content: '\e814'; } /* '' */
+.icon-paper-plane:before { content: '\e815'; } /* '' */
+.icon-star:before { content: '\e816'; } /* '' */
+.icon-user:before { content: '\e817'; } /* '' */
+.icon-left-small:before { content: '\e818'; } /* '' */
+.icon-right-small:before { content: '\e819'; } /* '' */
+.icon-left-open-big:before { content: '\e81a'; } /* '' */
+.icon-right-open-big:before { content: '\e81b'; } /* '' */
+.icon-arrows-cw:before { content: '\e81c'; } /* '' */
+.icon-left-open-mini:before { content: '\e81d'; } /* '' */
+.icon-right-open-mini:before { content: '\e81e'; } /* '' */
+.icon-up-open-mini:before { content: '\e81f'; } /* '' */
+.icon-down-open:before { content: '\e820'; } /* '' */
+.icon-globe:before { content: '\e821'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-angle-right:before { content: '\f105'; } /* '' */
+.icon-angle-up:before { content: '\f106'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-right-circled2:before { content: '\f18e'; } /* '' */
+.icon-left-circled2:before { content: '\f190'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */

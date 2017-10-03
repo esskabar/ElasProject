@@ -1,0 +1,23 @@
+body{
+  font-family: 'Roboto';
+}
+
+a{
+  border: none;
+  outline: none;
+}
+
+input[type="submit" ]{
+  outline: none;
+  :focus {
+
+    outline-color: transparent;
+    outline-style: none;
+  }
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+

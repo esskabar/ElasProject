@@ -1,0 +1,28 @@
+@import "vendor/bootstrap";
+@import "partials/reset";
+@import "vendor/slick/slick.scss";
+//@import "vendor/jquery-ui-datepicker/css/smoothness/jquery-ui-1.8.11.custom.css";
+//@import "../fonts/fontello/css/fontello.css";
+@import "partials/_general";
+
+//HOMEPAGE
+
+@import "partials/style";
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/footer";
+
+// Tabs Categories
+@import "partials/template-parts/gallery_categories";
+@import "partials/template-parts/single_apartament_page";
+@import "partials/template-parts/_categories_page";
+@import "partials/template-parts/_hero_home.scss";
+@import "partials/template-parts/_slider_home.scss";
+@import "partials/template-parts/_contact_form_single_post.scss";
+@import "partials/template-parts/_404error.scss";
+
+@import "partials/template-parts/_contact_map.scss";
+@import "partials/template-parts/_contact_form.scss";
+@import "partials/template-parts/_contact_form.scss";
+
+@import "partials/template-parts/_content.scss";
